@@ -1,6 +1,6 @@
 <template>
     <div ref="cate_left">
-        <ul class="childbox">
+        <ul ref="childbox">
             <li v-for="(item, index) in leftDatas" :key="index">
                 <router-link :to="'/category/'+item.category_id">{{ item.category_name }}</router-link>
             </li>
